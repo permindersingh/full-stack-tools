@@ -1,0 +1,23 @@
+{
+  "name": "babel-learn",
+  "version": "1.0.0",
+  "description": "This is a test project to demonstrate the capabilities and usage of Babel. This project requires @babel/cli to run.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert": "npx babel src --out-dir converted",
+    "convert:transform-arrow-functions": "npx babel src --out-dir converted --plugins=@babel/plugin-transform-arrow-functions",
+    "convert:use-preset-env": "npx babel src --out-dir converted --presets=@babel/preset-env",
+    "convert:convert-single-file": "rm -rf converted && npx babel src --out-file ./converted/index.js",
+    "start": "clear && node ./converted/index.js"
+  },
+  "keywords": [],
+  "author": "Perminder Singh Bhatia",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1"
+  },
+  "dependencies": {}
+}
