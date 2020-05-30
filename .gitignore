@@ -1,4 +1,8 @@
 package-lock.json
 node_modules
-# Specific to babel-learn project
+
+# Specific to babel-learn 
 converted
+
+# Specific to webpack-learn 
+dist

@@ -1,0 +1,19 @@
+{
+  "name": "webpack-learn",
+  "version": "1.0.0",
+  "description": "This project will provide usage help for webpack. (Note: The bundle is private and there is no entry point)",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Perminder",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
