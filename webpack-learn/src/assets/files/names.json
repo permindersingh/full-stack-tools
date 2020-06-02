@@ -1,0 +1,16 @@
+{
+  "heroes": [
+    {
+      "hero-name": "Iron Man",
+      "comics-company": "Marvel"
+    },
+    {
+      "hero-name": "Superman",
+      "comics-company": "DC"
+    },
+    {
+      "hero-name": "Ant Man",
+      "comics-company": "Marvel"
+    }
+  ]
+}
