@@ -508,5 +508,3 @@ This project covers most of the webpack features.
         use: ["style-loader", "css-loader"],
       },
       ```
-- **React integration**
-- **Babel integration**
