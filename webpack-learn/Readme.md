@@ -786,7 +786,7 @@ This project covers most of the webpack features.
     }
     ```
 
-  - Mark your root component as hot-exported taking an example below. This ensures that whole site is not loaded again on the required component is refreshed.
+  - Mark your root component as hot-exported taking an example below. This ensures that whole site is not loaded again and only the required component is refreshed.
 
     ```
     // App.js

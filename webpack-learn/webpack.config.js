@@ -8,7 +8,7 @@ let webpackOptions = {
   //   app: "./src/index.js",
   //   print: "./src/print.js",
   // },
-  entry: "./src/index.js",
+  entry: "./src/basic/index.js",
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -57,6 +57,7 @@ let webpackOptions = {
     runtimeChunk: "single",
     moduleIds: "hashed",
     splitChunks: {
+      chunks: "all",
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,

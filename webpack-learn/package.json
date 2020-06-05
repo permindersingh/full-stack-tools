@@ -5,9 +5,10 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "webpack --config webpack.config.js --progress",
-    "build:prod": "webpack --config webpack.config.js --env.production --progress",
-    "build:dyn-imp": "webpack --config webpack.dynamic.imports.config.js",
+    "build:basic:dev": "webpack --config webpack.config.js --progress",
+    "build:basic:prod": "webpack --config webpack.config.js --env.production --progress",
+    "build:dynimp:dev": "webpack --config webpack.dynamic.imports.config.js --progress",
+    "build:dynimp:prod": "webpack --config webpack.dynamic.imports.config.js --env.production --progress",
     "build:babel:dev": "webpack --config webpack.with.babel.config.js --progress",
     "build:babel:prod": "webpack --config webpack.with.babel.config.js --env.production --progress",
     "build:react:dev": "webpack --config webpack.with.react.and.babel.config.js --progress",

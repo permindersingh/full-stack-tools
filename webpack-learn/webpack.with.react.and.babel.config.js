@@ -37,6 +37,7 @@ let webpackOptions = {
     runtimeChunk: "single",
     moduleIds: "hashed",
     splitChunks: {
+      chunks: "all",
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,

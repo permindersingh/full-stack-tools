@@ -3,9 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: {
-    index: "./src/index.dynamic.imports.js",
+    index: "./src/dynimp/index.dynamic.imports.js",
   },
   plugins: [
     new CleanWebpackPlugin(),
