@@ -8,19 +8,29 @@
     "build:dev": "webpack --config webpack.config.js --progress",
     "build:prod": "webpack --config webpack.config.js --env.production --progress",
     "build:dyn-imp": "webpack --config webpack.dynamic.imports.config.js",
+    "build:babel:dev": "webpack --config webpack.with.babel.config.js --progress",
+    "build:babel:prod": "webpack --config webpack.with.babel.config.js --env.production --progress",
+    "build:react:dev": "webpack --config webpack.with.react.and.babel.config.js --progress",
+    "build:react:prod": "webpack --config webpack.with.react.and.babel.config.js --env.production --progress",
     "watch": "webpack --config webpack.config.js --watch",
+    "build:react:hot:dev": "NODE_ENV=development ENV_STAGE=build webpack --config webpack.with.react.and.babel.hot.config.js --progress",
+    "build:react:hot:prod": "NODE_ENV=production ENV_STAGE=build webpack --config webpack.with.react.and.babel.hot.config.js --progress",
+    "start:react": "webpack-dev-server --config webpack.with.react.and.babel.config.js --progress",
+    "start:react:hot": "NODE_ENV=development ENV_STAGE=local webpack-dev-server --config webpack.with.react.and.babel.hot.config.js --progress",
     "start": "webpack-dev-server --open"
   },
   "keywords": [],
   "author": "Perminder",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-react": "^7.10.1",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
     "csv-loader": "^3.0.3",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "json-loader": "^0.5.7",
+    "react-hot-loader": "^4.12.21",
     "style-loader": "^1.2.1",
     "terser-webpack-plugin": "^3.0.3",
     "webpack": "^4.43.0",
@@ -28,6 +38,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
